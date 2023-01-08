@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Amine Portfolio
+    </title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Amine Design</a>
+        <nav class="navigation">
+            <a href="#About me">About me </a>
+            <a href="#projects">Projects</a>
+            <a href="#Services">Services</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Mohamed Amine <br><span>Graphic Designer</span></h2>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamedaminesabik/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="About me">
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Graphic Designer amp; </h4>
+        <p>I'm a Graphic Designer  specials in Social Media Design using Photoshop,i curently take  post of Designer in Art  and Media Club, whenever i make a design, i make sure that is unique or adding my creative touch in existing ones, this experience opens me new challenges every day which give me the ability of  fast learning  which took my designs to another level.</p>
+        <a href="#" class="btn">let's talk</a>
+    </div>
+   </section>
+   <section class="cards" id="Services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <i class="fa-duotone fa-photo-film"></i>
+            </div>
+            <div class="info">
+                <h3>Photo Composition</h3>
+                <p>We help you to know  how to combine lots of images together and create beautiful works</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+     <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="info">
+                <h3>Social Media Design</h3>
+                <p>We go through each step to master this which is helpful for your community</p>
+            </div>
+        </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-command"></i>
+                </div>
+                <div class="info">
+                    <h3>Visual Identity </h3>
+                    <p>Creation logos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/photo compostion.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"> </p>
+                    <strong class="project-title">
+                        <span>Photo Composition</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/affiche formation.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Social Media Design</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/first post art et media.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Social Media Design </span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/logo Ultras_Plan de travail 1 (1).png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>LOGOS</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/car special effects.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Social Media Design</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>If you're interested please fill in this form </h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>!
+            <button type="submit" >Send</button>
+            </form>
+            <script src=" https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "sabik.ensa@uhp.ac.ma",
+                        Password : "vldkusxaghholghu",
+                        To : 'sabik.ensa@uhp.ac.ma',
+                        From : document.getElementById("email").value,
+                        Subject : "New contact from Enquiry",
+                        Body : "Name:" + document.getElementById("name").value 
+                            + "<br> Email:" + document. getElementById("email").value
+                            + "<br> Phone no :" + document. getElementById("phone").value
+                            + "<br> Message:"+ document. getElementById("message").value
+
+                   }).then(
+                   message => alert("Thanks for trusting us ")
+                   );
+                }
+            </script>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title"><span>Amine Design</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+      
+
+</body>
+</html>
